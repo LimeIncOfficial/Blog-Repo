@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Thu Mar 17 05:04:18 2022 as: nmap -vv -&#45;reason -Pn -sV -p 389 &quot;-&#45;script=banner,(ldap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/user/Desk/ctf/Nax/results/10.10.91.116/scans/tcp_389_ldap_nmap.txt -oX /home/user/Desk/ctf/Nax/results/10.10.91.116/scans/xml/tcp_389_ldap_nmap.xml 10.10.91.116 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 389 &quot;-&#45;script=banner,(ldap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/user/Desk/ctf/Nax/results/10.10.91.116/scans/tcp_389_ldap_nmap.txt -oX /home/user/Desk/ctf/Nax/results/10.10.91.116/scans/xml/tcp_389_ldap_nmap.xml 10.10.91.116" start="1647493458" startstr="Thu Mar 17 05:04:18 2022" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="389"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1647493459"/>
+<taskend task="NSE" time="1647493459"/>
+<taskbegin task="NSE" time="1647493459"/>
+<taskend task="NSE" time="1647493459"/>
+<taskbegin task="NSE" time="1647493459"/>
+<taskend task="NSE" time="1647493459"/>
+<taskbegin task="Connect Scan" time="1647493459"/>
+<taskend task="Connect Scan" time="1647493459" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1647493460"/>
+<taskend task="Service scan" time="1647493471" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1647493471"/>
+<taskend task="NSE" time="1647493482"/>
+<taskbegin task="NSE" time="1647493482"/>
+<taskend task="NSE" time="1647493484"/>
+<taskbegin task="NSE" time="1647493484"/>
+<taskend task="NSE" time="1647493484"/>
+<host starttime="1647493459" endtime="1647493484"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.91.116" addrtype="ipv4"/>
+<hostnames>
+<hostname name="nax.thm" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ldap" product="OpenLDAP" version="2.2.X - 2.3.X" method="probed" conf="10"><cpe>cpe:/a:openldap:openldap</cpe></service><script id="ldap-rootdse" output="&#xa;LDAP Results&#xa;  &lt;ROOT&gt;&#xa;      namingContexts: dc=nodomain&#xa;      supportedControl: 2.16.840.1.113730.3.4.18&#xa;      supportedControl: 2.16.840.1.113730.3.4.2&#xa;      supportedControl: 1.3.6.1.4.1.4203.1.10.1&#xa;      supportedControl: 1.3.6.1.1.22&#xa;      supportedControl: 1.2.840.113556.1.4.319&#xa;      supportedControl: 1.2.826.0.1.3344810.2.3&#xa;      supportedControl: 1.3.6.1.1.13.2&#xa;      supportedControl: 1.3.6.1.1.13.1&#xa;      supportedControl: 1.3.6.1.1.12&#xa;      supportedExtension: 1.3.6.1.4.1.4203.1.11.1&#xa;      supportedExtension: 1.3.6.1.4.1.4203.1.11.3&#xa;      supportedExtension: 1.3.6.1.1.8&#xa;      supportedLDAPVersion: 3&#xa;      supportedSASLMechanisms: DIGEST-MD5&#xa;      supportedSASLMechanisms: NTLM&#xa;      supportedSASLMechanisms: CRAM-MD5&#xa;      subschemaSubentry: cn=Subschema&#xa;"/><script id="ldap-search" output="&#xa;  Context: dc=nodomain&#xa;    dn: dc=nodomain&#xa;        objectClass: top&#xa;        objectClass: dcObject&#xa;        objectClass: organization&#xa;        o: nodomain&#xa;        dc: nodomain&#xa;    dn: cn=admin,dc=nodomain&#xa;        objectClass: simpleSecurityObject&#xa;        objectClass: organizationalRole&#xa;        cn: admin&#xa;        description: LDAP administrator&#xa;"/><script id="sslv2-drown" output="&#xa;"></script></port>
+</ports>
+<times srtt="270424" rttvar="270424" to="1352120"/>
+</host>
+<taskbegin task="NSE" time="1647493484"/>
+<taskend task="NSE" time="1647493484"/>
+<taskbegin task="NSE" time="1647493484"/>
+<taskend task="NSE" time="1647493484"/>
+<taskbegin task="NSE" time="1647493484"/>
+<taskend task="NSE" time="1647493484"/>
+<runstats><finished time="1647493484" timestr="Thu Mar 17 05:04:44 2022" summary="Nmap done at Thu Mar 17 05:04:44 2022; 1 IP address (1 host up) scanned in 25.93 seconds" elapsed="25.93" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

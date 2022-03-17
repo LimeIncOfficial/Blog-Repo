@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Thu Mar 17 05:04:16 2022 as: nmap -vv -&#45;reason -Pn -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/user/Desk/ctf/Nax/results/10.10.91.116/scans/tcp_80_http_nmap.txt -oX /home/user/Desk/ctf/Nax/results/10.10.91.116/scans/xml/tcp_80_http_nmap.xml 10.10.91.116 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/user/Desk/ctf/Nax/results/10.10.91.116/scans/tcp_80_http_nmap.txt -oX /home/user/Desk/ctf/Nax/results/10.10.91.116/scans/xml/tcp_80_http_nmap.xml 10.10.91.116" start="1647493456" startstr="Thu Mar 17 05:04:16 2022" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="80"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1647493458"/>
+<taskend task="NSE" time="1647493458"/>
+<taskbegin task="NSE" time="1647493458"/>
+<taskend task="NSE" time="1647493458"/>
+<taskbegin task="NSE" time="1647493458"/>
+<taskend task="NSE" time="1647493458"/>
+<taskbegin task="Connect Scan" time="1647493458"/>
+<taskend task="Connect Scan" time="1647493459" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1647493459"/>
+<taskend task="Service scan" time="1647493469" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1647493469"/>
+<taskprogress task="NSE" time="1647493500" percent="67.11" remaining="16" etc="1647493515"/>
+<taskprogress task="NSE" time="1647493530" percent="81.25" remaining="15" etc="1647493544"/>
+<taskprogress task="NSE" time="1647493560" percent="97.06" remaining="3" etc="1647493563"/>
+<taskprogress task="NSE" time="1647493590" percent="98.37" remaining="3" etc="1647493592"/>
+<taskprogress task="NSE" time="1647493620" percent="98.37" remaining="3" etc="1647493623"/>
+<taskprogress task="NSE" time="1647493650" percent="98.37" remaining="4" etc="1647493653"/>
+<taskprogress task="NSE" time="1647493680" percent="99.67" remaining="1" etc="1647493681"/>
+<taskprogress task="NSE" time="1647493710" percent="99.67" remaining="1" etc="1647493711"/>
+<taskprogress task="NSE" time="1647493740" percent="99.67" remaining="1" etc="1647493741"/>
+<taskprogress task="NSE" time="1647493770" percent="99.67" remaining="1" etc="1647493771"/>
+<taskend task="NSE" time="1647493793"/>
+<taskbegin task="NSE" time="1647493793"/>
+<taskend task="NSE" time="1647493794"/>
+<taskbegin task="NSE" time="1647493794"/>
+<taskend task="NSE" time="1647493794"/>
+<host starttime="1647493458" endtime="1647493794"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.91.116" addrtype="ipv4"/>
+<hostnames>
+<hostname name="nax.thm" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-chrono" output="Request times for /; avg: 22319.07ms; min: 16084.09ms; max: 25465.67ms"/><script id="http-comments-displayer" output="Couldn&apos;t find any comments."/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-date" output="Thu, 17 Mar 2022 05:04:59 GMT; +59m48s from local time."><elem key="date">2022-03-17T06:04:59+00:00</elem>
+<elem key="delta">3588.0</elem>
+</script><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-errors" output="Couldn&apos;t find any error pages."/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-headers" output="&#xa;  Date: Thu, 17 Mar 2022 05:04:46 GMT&#xa;  Server: Apache/2.4.18 (Ubuntu)&#xa;  Last-Modified: Wed, 25 Mar 2020 03:47:22 GMT&#xa;  ETag: &quot;534-5a1a5b9ce3fa2&quot;&#xa;  Accept-Ranges: bytes&#xa;  Content-Length: 1332&#xa;  Vary: Accept-Encoding&#xa;  Connection: close&#xa;  Content-Type: text/html&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-litespeed-sourcecode-download" output="Request with null byte did not work. This web server might not be vulnerable"/><script id="http-malware-host" output="Host appears to be clean"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-php-version" output="Logo query returned unknown hash f6f2f94c114d9e5a1a05cd287dd17911&#xa;Credits query returned unknown hash f6f2f94c114d9e5a1a05cd287dd17911"/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-security-headers" output="&#xa;"></script><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1&#xa;  Longest directory structure:&#xa;    Depth: 0&#xa;    Dir: /&#xa;  Total files found (by extension):&#xa;    Other: 1&#xa;"/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-useragent-tester" output="&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;  Change in Status Code: &#xa;    PECL::HTTP: 200&#xa;    WWW-Mechanize/1.34: 200&#xa;    Wget/1.13.4 (linux-gnu): 200&#xa;    http client: 200&#xa;    Zend_Http_Client: 200"><table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+</table>
+<table key="Change in Status Code">
+<elem key="PECL::HTTP">200</elem>
+<elem key="WWW-Mechanize/1.34">200</elem>
+<elem key="Wget/1.13.4 (linux-gnu)">200</elem>
+<elem key="http client">200</elem>
+<elem key="Zend_Http_Client">200</elem>
+</table>
+</script><script id="http-vhosts" output="&#xa;22 names had status ERROR&#xa;106 names had status 200"/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/></port>
+</ports>
+<times srtt="251441" rttvar="251441" to="1257205"/>
+</host>
+<taskbegin task="NSE" time="1647493794"/>
+<taskend task="NSE" time="1647493794"/>
+<taskbegin task="NSE" time="1647493794"/>
+<taskend task="NSE" time="1647493794"/>
+<taskbegin task="NSE" time="1647493794"/>
+<taskend task="NSE" time="1647493794"/>
+<runstats><finished time="1647493794" timestr="Thu Mar 17 05:09:54 2022" summary="Nmap done at Thu Mar 17 05:09:54 2022; 1 IP address (1 host up) scanned in 338.15 seconds" elapsed="338.15" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

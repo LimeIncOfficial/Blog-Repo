@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Thu Mar 17 05:12:31 2022 as: nmap -vv -&#45;reason -Pn -sV -p 443 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/user/Desk/ctf/Nax/results/10.10.91.116/scans/tcp_443_http_nmap.txt -oX /home/user/Desk/ctf/Nax/results/10.10.91.116/scans/xml/tcp_443_https_nmap.xml 10.10.91.116 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 443 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/user/Desk/ctf/Nax/results/10.10.91.116/scans/tcp_443_http_nmap.txt -oX /home/user/Desk/ctf/Nax/results/10.10.91.116/scans/xml/tcp_443_https_nmap.xml 10.10.91.116" start="1647493951" startstr="Thu Mar 17 05:12:31 2022" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="443"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1647493951"/>
+<taskend task="NSE" time="1647493951"/>
+<taskbegin task="NSE" time="1647493951"/>
+<taskend task="NSE" time="1647493951"/>
+<taskbegin task="NSE" time="1647493951"/>
+<taskend task="NSE" time="1647493951"/>
+<taskbegin task="Connect Scan" time="1647493951"/>
+<taskend task="Connect Scan" time="1647493951" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1647493951"/>
+<taskend task="Service scan" time="1647494000" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1647494000"/>
+<taskprogress task="NSE" time="1647494031" percent="32.40" remaining="65" etc="1647494096"/>
+<taskprogress task="NSE" time="1647494061" percent="57.79" remaining="45" etc="1647494106"/>
+<taskprogress task="NSE" time="1647494091" percent="80.48" remaining="23" etc="1647494113"/>
+<taskprogress task="NSE" time="1647494121" percent="81.23" remaining="28" etc="1647494149"/>
+<taskprogress task="NSE" time="1647494151" percent="81.42" remaining="35" etc="1647494185"/>
+<taskprogress task="NSE" time="1647494181" percent="81.00" remaining="43" etc="1647494223"/>
+<taskprogress task="NSE" time="1647494211" percent="81.73" remaining="48" etc="1647494258"/>
+<taskprogress task="NSE" time="1647494241" percent="82.12" remaining="53" etc="1647494293"/>
+<taskprogress task="NSE" time="1647494271" percent="83.11" remaining="56" etc="1647494326"/>
+<taskprogress task="NSE" time="1647494301" percent="87.54" remaining="43" etc="1647494344"/>
+<taskprogress task="NSE" time="1647494331" percent="98.37" remaining="6" etc="1647494336"/>
+<taskprogress task="NSE" time="1647494361" percent="98.37" remaining="6" etc="1647494367"/>
+<taskprogress task="NSE" time="1647494391" percent="99.02" remaining="4" etc="1647494395"/>
+<taskprogress task="NSE" time="1647494421" percent="99.02" remaining="5" etc="1647494425"/>
+<taskprogress task="NSE" time="1647494451" percent="99.35" remaining="3" etc="1647494454"/>
+<taskprogress task="NSE" time="1647494481" percent="99.35" remaining="4" etc="1647494484"/>
+<taskprogress task="NSE" time="1647494511" percent="99.67" remaining="2" etc="1647494513"/>
+<taskprogress task="NSE" time="1647494541" percent="99.67" remaining="2" etc="1647494543"/>
+<taskprogress task="NSE" time="1647494571" percent="99.67" remaining="2" etc="1647494573"/>
+<taskprogress task="NSE" time="1647494601" percent="99.67" remaining="2" etc="1647494603"/>
+<taskend task="NSE" time="1647494615"/>
+<taskbegin task="NSE" time="1647494615"/>
+<taskprogress task="NSE" time="1647494646" percent="87.50" remaining="5" etc="1647494650"/>
+<taskend task="NSE" time="1647494648"/>
+<taskbegin task="NSE" time="1647494648"/>
+<taskend task="NSE" time="1647494651"/>
+<host starttime="1647493951" endtime="1647494651"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.91.116" addrtype="ipv4"/>
+<hostnames>
+<hostname name="nax.thm" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="Apache/2.4.18 (Ubuntu)" tunnel="ssl" method="probed" conf="10"/><script id="http-aspnet-debug" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-chrono" output="Request times for /; avg: 18655.45ms; min: 10476.30ms; max: 22387.63ms"/><script id="http-comments-displayer" output="Couldn&apos;t find any comments."/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-date" output="Thu, 17 Mar 2022 05:17:56 GMT; +1h00m00s from local time."><elem key="date">2022-03-17T06:17:56+00:00</elem>
+<elem key="delta">3600.0</elem>
+</script><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-errors" output="&#xa;Spidering limited to: maxpagecount=40; withinhost=nax.thm&#xa;  Found the following error pages: &#xa;  &#xa;  Error Code: 400&#xa;  &#x9;http://nax.thm:443/&#xa;"/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-headers" output="&#xa;  Date: Thu, 17 Mar 2022 05:17:56 GMT&#xa;  Server: Apache/2.4.18 (Ubuntu)&#xa;  Content-Length: 438&#xa;  Connection: close&#xa;  Content-Type: text/html; charset=iso-8859-1&#xa;  &#xa;  (Request type: GET)&#xa;"/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-malware-host" output="Host appears to be clean"/><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-security-headers" output="&#xa;  Strict_Transport_Security: &#xa;    HSTS not configured in HTTPS Server"><table key="Strict_Transport_Security">
+<elem>HSTS not configured in HTTPS Server</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;  Longest directory structure:&#xa;    Depth: 0&#xa;    Dir: /&#xa;  Total files found (by extension):&#xa;    &#xa;"/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-useragent-tester" output="&#xa;  Allowed User Agents: &#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34&#xa;  Change in Status Code: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html): 400&#xa;    libcurl-agent/1.0: 400&#xa;    libwww: 400&#xa;    lwp-trivial: 400"><table key="Allowed User Agents">
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+<table key="Change in Status Code">
+<elem key="Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)">400</elem>
+<elem key="libcurl-agent/1.0">400</elem>
+<elem key="libwww">400</elem>
+<elem key="lwp-trivial">400</elem>
+</table>
+</script><script id="http-vhosts" output="&#xa;128 names had status ERROR"/><script id="http-vuln-cve2014-3704" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/><script id="ssl-ccs-injection" output="No reply from server (TIMEOUT)"/><script id="ssl-cert" output="Subject: commonName=192.168.85.153/organizationName=Nagios Enterprises/stateOrProvinceName=Minnesota/countryName=US/organizationalUnitName=Development/localityName=St. Paul&#xa;Issuer: commonName=192.168.85.153/organizationName=Nagios Enterprises/stateOrProvinceName=Minnesota/countryName=US/organizationalUnitName=Development/localityName=St. Paul&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2020-03-24T00:14:58&#xa;Not valid after:  2030-03-22T00:14:58&#xa;MD5:   636c ab0f 6399 34e3 b6de e6e2 b294 d4ef&#xa;SHA-1: 80cd 2e1b 110f 1b5f 1943 1b3f c218 71e7 8b98 6801&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDzTCCArWgAwIBAgIBADANBgkqhkiG9w0BAQUFADCBgDELMAkGA1UEBhMCVVMx&#xa;EjAQBgNVBAgMCU1pbm5lc290YTERMA8GA1UEBwwIU3QuIFBhdWwxGzAZBgNVBAoM&#xa;Ek5hZ2lvcyBFbnRlcnByaXNlczEUMBIGA1UECwwLRGV2ZWxvcG1lbnQxFzAVBgNV&#xa;BAMMDjE5Mi4xNjguODUuMTUzMB4XDTIwMDMyNDAwMTQ1OFoXDTMwMDMyMjAwMTQ1&#xa;OFowgYAxCzAJBgNVBAYTAlVTMRIwEAYDVQQIDAlNaW5uZXNvdGExETAPBgNVBAcM&#xa;CFN0LiBQYXVsMRswGQYDVQQKDBJOYWdpb3MgRW50ZXJwcmlzZXMxFDASBgNVBAsM&#xa;C0RldmVsb3BtZW50MRcwFQYDVQQDDA4xOTIuMTY4Ljg1LjE1MzCCASIwDQYJKoZI&#xa;hvcNAQEBBQADggEPADCCAQoCggEBANdnw2CkJpNnnwjJ+PaxonTH/G5TSKLru67c&#xa;aQyy4FhI/xa+0Dwn/HjWnWIOE3gOQB7QyOyG30guUpFohUEtC9agL7tpogpxrV8l&#xa;ie0vhXsz0ETdzMhaou6QOrLS1OSspAh+t492t71BILl6ReHPLoFyEghyRctP/iK0&#xa;PelUJKndJ2ElpLdbkMUuVzQ9mp8qIjoTF4CS1JwiUESCtikRmZWp398buklzNGgF&#xa;VZIRJPu5VZMPGc7Ui3QUSaTF2aqi9FRXZRXN+0q2nWvdUFrUqnzrmaVynOupGXhS&#xa;O17VZtC9F/GM+yWpg3Lck9wevt5o3nnYW4k8h5kDNHu4f0oDR88CAwEAAaNQME4w&#xa;HQYDVR0OBBYEFFRhBQ3MZkrfjRqOlHjApJZAN+juMB8GA1UdIwQYMBaAFFRhBQ3M&#xa;ZkrfjRqOlHjApJZAN+juMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADggEB&#xa;ABeWyFzGfxf3vmGuLXdDXVj5e1LwBlvoNmHGf11Buy/yljpUI6jg1HxUTSABU/iS&#xa;ZSsCnwOQ5dtqRAIcvFp07ZlUw9DpeSChj2jxXw+YxINOSqqNgE66zelXV9rJb7TX&#xa;HWho2/g6OzKs5ii2h5lyjlValQAgfxBYJpRjvf4FfIJpzL+RnrsOqJBNUurbAn1L&#xa;yNkqSDJhCPNN/g0V6eyOZRjTipV2FzcHYrbt84qFPN8gQ5Rpd6wNOWoUfuY1tL6H&#xa;yepaZ/iLv+wY60Kxd8+GD4Oy7Tpz+Ilkr48EIUffejHzVrcn7JikS8+Uf8nvDi9Q&#xa;LnC7LykFocxS13IXPcTfrnI=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">192.168.85.153</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">St. Paul</elem>
+<elem key="organizationName">Nagios Enterprises</elem>
+<elem key="organizationalUnitName">Development</elem>
+<elem key="stateOrProvinceName">Minnesota</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">192.168.85.153</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">St. Paul</elem>
+<elem key="organizationName">Nagios Enterprises</elem>
+<elem key="organizationalUnitName">Development</elem>
+<elem key="stateOrProvinceName">Minnesota</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">D767C360A42693679F08C9F8F6B1A274C7FC6E5348A2EBBBAEDC690CB2E05848FF16BED03C27FC78D69D620E13780E401ED0C8EC86DF482E52916885412D0BD6A02FBB69A20A71AD5F2589ED2F857B33D044DDCCC85AA2EE903AB2D2D4E4ACA4087EB78F76B7BD4120B97A45E1CF2E817212087245CB4FFE22B43DE95424A9DD276125A4B75B90C52E57343D9A9F2A223A13178092D49C22504482B629119995A9DFDF1BBA497334680555921124FBB955930F19CED48B741449A4C5D9AAA2F454576515CDFB4AB69D6BDD505AD4AA7CEB99A5729CEBA91978523B5ED566D0BD17F18CFB25A98372DC93DC1EBEDE68DE79D85B893C879903347BB87F4A0347CF</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">54:61:05:0D:CC:66:4A:DF:8D:1A:8E:94:78:C0:A4:96:40:37:E8:EE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:54:61:05:0D:CC:66:4A:DF:8D:1A:8E:94:78:C0:A4:96:40:37:E8:EE&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+</table>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2020-03-24T00:14:58</elem>
+<elem key="notAfter">2030-03-22T00:14:58</elem>
+</table>
+<elem key="md5">636cab0f639934e3b6dee6e2b294d4ef</elem>
+<elem key="sha1">80cd2e1b110f1b5f19431b3fc21871e78b986801</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDzTCCArWgAwIBAgIBADANBgkqhkiG9w0BAQUFADCBgDELMAkGA1UEBhMCVVMx&#xa;EjAQBgNVBAgMCU1pbm5lc290YTERMA8GA1UEBwwIU3QuIFBhdWwxGzAZBgNVBAoM&#xa;Ek5hZ2lvcyBFbnRlcnByaXNlczEUMBIGA1UECwwLRGV2ZWxvcG1lbnQxFzAVBgNV&#xa;BAMMDjE5Mi4xNjguODUuMTUzMB4XDTIwMDMyNDAwMTQ1OFoXDTMwMDMyMjAwMTQ1&#xa;OFowgYAxCzAJBgNVBAYTAlVTMRIwEAYDVQQIDAlNaW5uZXNvdGExETAPBgNVBAcM&#xa;CFN0LiBQYXVsMRswGQYDVQQKDBJOYWdpb3MgRW50ZXJwcmlzZXMxFDASBgNVBAsM&#xa;C0RldmVsb3BtZW50MRcwFQYDVQQDDA4xOTIuMTY4Ljg1LjE1MzCCASIwDQYJKoZI&#xa;hvcNAQEBBQADggEPADCCAQoCggEBANdnw2CkJpNnnwjJ+PaxonTH/G5TSKLru67c&#xa;aQyy4FhI/xa+0Dwn/HjWnWIOE3gOQB7QyOyG30guUpFohUEtC9agL7tpogpxrV8l&#xa;ie0vhXsz0ETdzMhaou6QOrLS1OSspAh+t492t71BILl6ReHPLoFyEghyRctP/iK0&#xa;PelUJKndJ2ElpLdbkMUuVzQ9mp8qIjoTF4CS1JwiUESCtikRmZWp398buklzNGgF&#xa;VZIRJPu5VZMPGc7Ui3QUSaTF2aqi9FRXZRXN+0q2nWvdUFrUqnzrmaVynOupGXhS&#xa;O17VZtC9F/GM+yWpg3Lck9wevt5o3nnYW4k8h5kDNHu4f0oDR88CAwEAAaNQME4w&#xa;HQYDVR0OBBYEFFRhBQ3MZkrfjRqOlHjApJZAN+juMB8GA1UdIwQYMBaAFFRhBQ3M&#xa;ZkrfjRqOlHjApJZAN+juMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADggEB&#xa;ABeWyFzGfxf3vmGuLXdDXVj5e1LwBlvoNmHGf11Buy/yljpUI6jg1HxUTSABU/iS&#xa;ZSsCnwOQ5dtqRAIcvFp07ZlUw9DpeSChj2jxXw+YxINOSqqNgE66zelXV9rJb7TX&#xa;HWho2/g6OzKs5ii2h5lyjlValQAgfxBYJpRjvf4FfIJpzL+RnrsOqJBNUurbAn1L&#xa;yNkqSDJhCPNN/g0V6eyOZRjTipV2FzcHYrbt84qFPN8gQ5Rpd6wNOWoUfuY1tL6H&#xa;yepaZ/iLv+wY60Kxd8+GD4Oy7Tpz+Ilkr48EIUffejHzVrcn7JikS8+Uf8nvDi9Q&#xa;LnC7LykFocxS13IXPcTfrnI=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-enum-ciphers" output="&#xa;  TLSv1.0: &#xa;    ciphers: &#xa;      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A&#xa;      TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A&#xa;      TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 2048) - A&#xa;      TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 2048) - A&#xa;    compressors: &#xa;      NULL&#xa;    cipher preference: client&#xa;    warnings: &#xa;      Weak certificate signature: SHA1&#xa;  TLSv1.1: &#xa;    ciphers: &#xa;      TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 2048) - A&#xa;      TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 2048) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A&#xa;      TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A&#xa;      TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 2048) - A&#xa;      TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 2048) - A&#xa;    compressors: &#xa;      NULL&#xa;    cipher preference error: Error when comparing TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA and TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA&#xa;    warnings: &#xa;      Weak certificate signature: SHA1&#xa;  TLSv1.2: &#xa;    ciphers: &#xa;      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (secp256r1) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (secp256r1) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (secp256r1) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (secp256r1) - A&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 2048) - A&#xa;      TLS_RSA_WITH_AES_128_GCM_SHA256 (rsa 2048) - A&#xa;      TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A&#xa;      TLS_RSA_WITH_AES_256_CBC_SHA256 (rsa 2048) - A&#xa;      TLS_RSA_WITH_AES_256_GCM_SHA384 (rsa 2048) - A&#xa;      TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 2048) - A&#xa;      TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 2048) - A&#xa;    compressors: &#xa;      NULL&#xa;    cipher preference: client&#xa;    warnings: &#xa;      Weak certificate signature: SHA1&#xa;  least strength: A"><table key="TLSv1.0">
+<table key="ciphers">
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</elem>
+<elem key="kex_info">secp256r1</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</elem>
+<elem key="kex_info">secp256r1</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_128_CBC_SHA</elem>
+<elem key="kex_info">rsa 2048</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_256_CBC_SHA</elem>
+<elem key="kex_info">rsa 2048</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_128_CBC_SHA</elem>
+<elem key="kex_info">rsa 2048</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_256_CBC_SHA</elem>
+<elem key="kex_info">rsa 2048</elem>
+</table>
+</table>
+<table key="compressors">
+<elem>NULL</elem>
+</table>
+<elem key="cipher preference">client</elem>
+<table key="warnings">
+<elem>Weak certificate signature: SHA1</elem>
+</table>
+</table>
+<table key="TLSv1.1">
+<table key="ciphers">
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA</elem>
+<elem key="kex_info">dh 2048</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA</elem>
+<elem key="kex_info">dh 2048</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</elem>
+<elem key="kex_info">secp256r1</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</elem>
+<elem key="kex_info">secp256r1</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_128_CBC_SHA</elem>
+<elem key="kex_info">rsa 2048</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_256_CBC_SHA</elem>
+<elem key="kex_info">rsa 2048</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_128_CBC_SHA</elem>
+<elem key="kex_info">rsa 2048</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_256_CBC_SHA</elem>
+<elem key="kex_info">rsa 2048</elem>
+</table>
+</table>
+<table key="compressors">
+<elem>NULL</elem>
+</table>
+<elem key="cipher preference error">Error when comparing TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA and TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA</elem>
+<table key="warnings">
+<elem>Weak certificate signature: SHA1</elem>
+</table>
+</table>
+<table key="TLSv1.2">
+<table key="ciphers">
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</elem>
+<elem key="kex_info">secp256r1</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256</elem>
+<elem key="kex_info">secp256r1</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</elem>
+<elem key="kex_info">secp256r1</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</elem>
+<elem key="kex_info">secp256r1</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384</elem>
+<elem key="kex_info">secp256r1</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384</elem>
+<elem key="kex_info">secp256r1</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_128_CBC_SHA</elem>
+<elem key="kex_info">rsa 2048</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_128_CBC_SHA256</elem>
+<elem key="kex_info">rsa 2048</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_128_GCM_SHA256</elem>
+<elem key="kex_info">rsa 2048</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_256_CBC_SHA</elem>
+<elem key="kex_info">rsa 2048</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_256_CBC_SHA256</elem>
+<elem key="kex_info">rsa 2048</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_256_GCM_SHA384</elem>
+<elem key="kex_info">rsa 2048</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_128_CBC_SHA</elem>
+<elem key="kex_info">rsa 2048</elem>
+</table>
+<table>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_256_CBC_SHA</elem>
+<elem key="kex_info">rsa 2048</elem>
+</table>
+</table>
+<table key="compressors">
+<elem>NULL</elem>
+</table>
+<elem key="cipher preference">client</elem>
+<table key="warnings">
+<elem>Weak certificate signature: SHA1</elem>
+</table>
+</table>
+<elem key="least strength">A</elem>
+</script><script id="sslv2-drown" output="&#xa;"></script></port>
+</ports>
+<times srtt="219050" rttvar="219050" to="1095250"/>
+</host>
+<taskbegin task="NSE" time="1647494652"/>
+<taskend task="NSE" time="1647494652"/>
+<taskbegin task="NSE" time="1647494652"/>
+<taskend task="NSE" time="1647494652"/>
+<taskbegin task="NSE" time="1647494652"/>
+<taskend task="NSE" time="1647494652"/>
+<runstats><finished time="1647494652" timestr="Thu Mar 17 05:24:12 2022" summary="Nmap done at Thu Mar 17 05:24:12 2022; 1 IP address (1 host up) scanned in 701.06 seconds" elapsed="701.06" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

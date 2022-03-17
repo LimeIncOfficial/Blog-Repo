@@ -1,0 +1,28 @@
+[*] ssh found on tcp/22.
+
+
+
+[*] smtp found on tcp/25.
+
+
+
+[*] http found on tcp/80.
+
+
+
+[*] ldap found on tcp/389.
+
+
+
+[*] ssl/http found on tcp/443.
+
+
+
+[*] ssl/https found on tcp/443.
+
+
+
+[*] tcpwrapped found on tcp/5667.
+
+
+

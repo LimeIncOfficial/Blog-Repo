@@ -1,0 +1,37 @@
+Version: 2.0.10-static
+OpenSSL 1.1.1l-dev  xx XXX xxxx
+
+Connected to 10.10.91.116
+
+Testing SSL server 10.10.91.116 on port 443 using SNI name 10.10.91.116
+
+  SSL/TLS Protocols:
+SSLv2     disabled
+SSLv3     disabled
+TLSv1.0   disabled
+TLSv1.1   disabled
+TLSv1.2   disabled
+TLSv1.3   disabled
+
+  TLS Fallback SCSV:
+Connection failed - unable to determine TLS Fallback SCSV support
+
+  TLS renegotiation:
+Session renegotiation not supported
+
+  TLS Compression:
+Compression disabled
+
+  Heartbleed:
+
+  Supported Server Cipher(s):
+
+  SSL Certificate:
+Signature Algorithm: sha1WithRSAEncryption
+RSA Key Strength:    2048
+
+Subject:  192.168.85.153
+Issuer:   192.168.85.153
+
+Not valid before: Mar 24 00:14:58 2020 GMT
+Not valid after:  Mar 22 00:14:58 2030 GMT
